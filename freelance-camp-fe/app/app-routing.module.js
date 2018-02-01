@@ -7,19 +7,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = /** @class */ (function () {
-    function AppComponent() {
+var router_1 = require("@angular/router");
+var homepage_component_1 = require("./homepage/homepage.component");
+var routes = [
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'home', component: homepage_component_1.HomepageComponent },
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'app',
-            template: "\n\n  <h1>Navigation</h1>\n\n  <router-outlet></router-outlet>\n  "
+    AppRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [router_1.RouterModule.forRoot(routes)],
+            exports: [router_1.RouterModule]
         })
-    ], AppComponent);
-    return AppComponent;
+    ], AppRoutingModule);
+    return AppRoutingModule;
 }());
-exports.AppComponent = AppComponent;
-// this is like the application.html.erb, sort of the template for the site, more flexibility
-// whatever options passed in through the router are done so via the router outlet space
-//# sourceMappingURL=app.component.js.map
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=app-routing.module.js.map
