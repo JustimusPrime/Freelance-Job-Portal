@@ -3,6 +3,10 @@ body {
 /*  color: lightgray;*/
 }
 
+/*a:link {
+  color: blue;
+  text-decoration: none;
+}*/
 
 .headline {
   color: lightgray;
