@@ -16,21 +16,21 @@ var DocumentsComponent = /** @class */ (function () {
                 description: 'long and boring description',
                 file_url: "http://google.com",
                 updated_at: '1/31/18',
-                image_url: 'http://google.com',
+                image_url: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Mistakes-to-avoid-when-hiring-freelancers.jpg',
             },
             {
                 title: "My Second Doc",
-                description: 'long and boring description',
+                description: 'another long and boring description',
                 file_url: "http://google.com",
                 updated_at: '1/31/18',
-                image_url: 'http://google.com',
+                image_url: 'https://c1.staticflickr.com/5/4464/36928767894_eb2ecc151d_b.jpg',
             },
             {
                 title: "My Last Doc",
-                description: 'long and boring description',
+                description: 'yet another long and boring description',
                 file_url: "http://google.com",
                 updated_at: '1/31/18',
-                image_url: 'http://google.com',
+                image_url: 'https://c1.staticflickr.com/3/2849/8843832088_e8bb3f3964_b.jpg',
             },
         ];
     }
