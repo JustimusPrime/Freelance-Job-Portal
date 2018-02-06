@@ -1,0 +1,7 @@
+.list-group-item-proposal {
+  cursor: pointer;
+}
+
+.proposal-link:hover {
+  text-decoration: none;
+}
