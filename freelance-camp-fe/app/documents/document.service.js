@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-var RX_1 = require("rxjs/RX");
+var Rx_1 = require("rxjs/Rx");
 var DocumentService = /** @class */ (function () {
     function DocumentService(http) {
         this.http = http;
@@ -34,7 +34,7 @@ var DocumentService = /** @class */ (function () {
             errMsg = error.message ? error.message : error.toString();
         }
         console.error(errMsg);
-        return RX_1.Observable.throw(errMsg);
+        return Rx_1.Observable.throw(errMsg);
     };
     DocumentService = __decorate([
         core_1.Injectable(),
