@@ -23,7 +23,7 @@ var ProposalService = /** @class */ (function () {
             .catch(this.handleError);
     };
     ProposalService.prototype.getProposal = function (id) {
-        return this.http.get(this.proposalsUrl + "/" + id + ".json");
+        return this.http.get(this.proposalsUrl + "/" + id + '.json');
     };
     ProposalService.prototype.handleError = function (error) {
         // In a real world app, we might use a remote logging infrastructure
