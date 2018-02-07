@@ -1,8 +1,8 @@
 <div class="card container form-container">  
-  <h1>Create a Proposal</h1>
   <div class="row">
     <div class="col-md-6">
-      <form #proposalForm="ngForm">
+  <h1>Create a Proposal</h1>
+      <form (ngSubmit)="createProposal(proposal)" #proposalForm="ngForm">
         <div class="form-group">
           <label for="customer">Customer Name</label>
           <input type="text"
@@ -124,18 +124,20 @@
                   class="form-control"
                   id="client_email"
                   placeholder="person@example.com"
-                  required
                   name="client_email"
                   #client_email='ngModel'
                   [(ngModel)]="proposal.client_email"
 
-          >
-          <div [hidden]="hourly_rate.valid || hourly_rate.pristine"
-            class="alert alert-danger"
-          >
-            You need to enter your hourly rate for the project
-          </div>        
-        </div>        
+          >      
+        </div>
+
+        <button type="submit"
+          class="btn btn-outline-primary btn-lg"
+          [disabled]="!proposalForm.form.valid"
+          [hidden]="submitted"
+        >
+          Generate Proposal
+        </button>        
 
       </form>
 
